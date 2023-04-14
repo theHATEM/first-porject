@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="field">
+        <canvas id="canvas"></canvas>
+        <div class="tool-pad">
+            <div class="slider">
+                <input type="range" min="1" max="50" value="1" oninput="changeVar()" id="speed-slider">
+                <span id="speed-text">omega: 1</span>
+            </div>
+            <div class="slider">
+                <input type="range" min="1" max="75" value="40" oninput="changeVar()" id="radius-slider">
+                <span id="radius-text">radius: 40</span>
+            </div>
+
+            <div class="slider">
+                <input type="range" min="0" max="100" value="0" oninput="changeVar()" id="theta-slider">
+                <span id="theta-text">theta0: 0</span>
+            </div>
+            
+            <button type="button" onclick="start()" id="start-button">start</button>
+            <button type="button" onclick="restart()">restart</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

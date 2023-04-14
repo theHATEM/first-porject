@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tool-pad {
+    display: flex;
+    gap: 3px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+button {
+    width: 100px;
+    border: thin;
+    border-radius: 5px;
+    background-color: deepskyblue;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    height: 40px;
+    
+}
+
+canvas {
+    border: solid 1px black;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 3px 3px rgb(78, 76, 76);
+}
+
+
+button:hover{
+    transform: scale(0.96);
+}
+
+
+button:active {
+    background-color: lightblue;
+}
